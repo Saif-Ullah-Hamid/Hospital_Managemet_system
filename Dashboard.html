@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="font owesome icon/all.min.css">
+    <link rel="stylesheet" href="font owesome icon/fontawesome.min.css">
+</head>
+<body>
+    <div class=" flex w-screen bg-red-5000 h-screen">
+      <!-- sidebar start here -->
+        <aside id="logo-sidebar" class="sidebar  w-[16rem] h-screen    " >
+            <div class="h-full  pb-4 overflow-y-auto bg-black text-white ">
+            <div class="logo flex w-full h-10 items-center py-12  border-b-[1px]  border-[#dcbf73]  ">
+               <img src="./Assets/logo.png" alt="" class="w-[70px] h-[70px] "> <span class="font-bold text-3xl text-[#ecc562]">H<span class="ml-[-10px]">M</span>S</span>
+            </div>
+            <div class="border-b-[1px] border-[#dcbf73] mt-1"></div>
+
+               <ul class=" menu space-y-2 font-medium px-2 mt-5">
+                  <li >
+                     <a href="Dashboard.html" class="flex items-center hover:text-black group  p-2   group-hover:text-black  rounded-lg hover:bg-gray-100  group">
+                        <i class="fas fa-home  "></i>
+                        <span class="ms-3">Home</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="Appointment.html" class="flex items-center hover:text-black group  p-2   group-hover:text-black  rounded-lg hover:bg-gray-100  group">
+                        <i class="fas fa-ring  "></i>
+                        <span class="ms-3 ">Appointments</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="Bills.html" class="flex items-center hover:text-black group  p-2   group-hover:text-black  rounded-lg hover:bg-gray-100  group">
+                        <i class="fas fa-gear  "></i>
+                        <span class="ms-3 ">Bills</span>
+                     </a>
+                  </li>
+                  <li class="relative dropdownlink">
+                     <a  class="flex items-center hover:text-black group p-2 rounded-lg hover:bg-gray-100">
+                         <i class="fas fa-gear"></i>
+                         <span class="ms-3">Medical Records</span>
+                     </a>
+                     <div class="dropdown absolute left-5 mt-1 w-56 top-9 bg-white rounded-lg shadow-lg hidden group-hover:block dropdown-content">
+                         <a href="/visitHistory" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-black">Visit History</a>
+                         <a href="/TestResult" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-black">Test Results</a>
+                     </div>
+                 </li>
+               </ul>
+               <div class="Sidebar-footer  text-gray-400 text-sm mt-24  px-5">
+                  <div>
+                     <p>Contact</p>
+                     <p>Privacy Policy</p>
+                     <p>Term and conditions</p>
+                  </div>
+                  <div>
+                     <p class="text-gray-400">Emergency Contact:03290308332</p>
+                  </div>
+               </div>
+            </div>
+         </aside>
+         <!-- sidebar end here -->
+                  
+         <!-- Main content start here -->
+         <div class="main-content text-black bg-white w-full  overflow-x-auto relative  h-screen">
+            <!-- top navbar start -->
+           <div class="top-navbar text-right my-0 py-2 p-5 flex items-center justify-end">
+            <div class="bar"><i class="fas fa-bars "></i></div>
+          <div class="right-div flex items-center gap-2">
+            <div class="image w-12 h-12 rounded-full bg-gray-200 inline-block">
+               <img src="Assets/user.jpg" alt="" width="50px" height="50px" class="rounded-full">
+            </div>
+            <span class="font-semibold ">User Name <i class="fas fa-gear fa-spin"></i> </span>
+          </div>
+
+           </div>
+           
+           <!-- top navbar ends here -->
+             <!-- upcoming Appointment start here -->
+             <h1 class="font-semibold text-xl  border-b-[1.5px] py-2  mb-3 border-b-blue-500 px-5 mx-5 text-center md:text-left ">Upcoming Appointments</h1>
+            <div class="appointment-container  ">
+               
+              <div class="box-container   flex flex-wrap md:flex-nowrap gap-5 px-5 md:px-2 justify-around">
+               <div class="box bg-gray-100   w-60 h-64 flex justify-between rounded-2xl  px-3 py-5 shadow-md hover:scale-[1.05] transition-all duration-500 shadow-black">
+                  <div>
+                      <div class="profile ml-[66px]">
+                         <img src="Assets/pngwing.com (4).png" alt="" class="w-16 h-116 mx-auto">
+                         <h3 class="text-sm font-semibold">Doctor Name</h3>
+                        </div>
+                      <div class="profile-content my-8  px-3">
+                         <h2 class="font-[500]">Time: <span class="font-normal text-[13px]">6:33 AM</span></h2>
+                         <h2 class="font-[500]">Date: <span class="font-normal text-[13px]">27/10/2024</span></h2>
+                         <h2 class="font-[500]">Reason: <span class="font-normal text-[13px]">lorem ipsum</span></h2>
+                         <h2 class="font-[500]">Status: <span class="font-normal text-[13px]">Completed</span></h2>
+                      </div>
+                  </div>
+                </div>
+                <div class="box bg-gray-100   w-60 h-64 flex justify-between rounded-2xl  px-3 py-5 shadow-md hover:scale-[1.05] transition-all duration-500 shadow-black">
+                  <div>
+                      <div class="profile ml-[66px]">
+                         <img src="Assets/pngwing.com (4).png" alt="" class="w-16 h-116 mx-auto">
+                         <h3 class="text-sm font-semibold">Doctor Name</h3>
+                        </div>
+                      <div class="profile-content my-8  px-3">
+                         <h2 class="font-[500]">Time: <span class="font-normal text-[13px]">6:33 AM</span></h2>
+                         <h2 class="font-[500]">Date: <span class="font-normal text-[13px]">27/10/2024</span></h2>
+                         <h2 class="font-[500]">Reason: <span class="font-normal text-[13px]">lorem ipsum</span></h2>
+                         <h2 class="font-[500]">Status: <span class="font-normal text-[13px]">Completed</span></h2>
+                      </div>
+                  </div>
+                </div>
+                <div class="box bg-gray-100   w-60 h-64 flex justify-between rounded-2xl  px-3 py-5 shadow-md hover:scale-[1.05] transition-all duration-500 shadow-black">
+                  <div>
+                      <div class="profile ml-[66px]">
+                         <img src="Assets/pngwing.com (4).png" alt="" class="w-16 h-116 mx-auto">
+                         <h3 class="text-sm font-semibold">Doctor Name</h3>
+                        </div>
+                      <div class="profile-content my-8  px-3">
+                         <h2 class="font-[500]">Time: <span class="font-normal text-[13px]">6:33 AM</span></h2>
+                         <h2 class="font-[500]">Date: <span class="font-normal text-[13px]">27/10/2024</span></h2>
+                         <h2 class="font-[500]">Reason: <span class="font-normal text-[13px]">lorem ipsum</span></h2>
+                         <h2 class="font-[500]">Status: <span class="font-normal text-[13px]">Completed</span></h2>
+                      </div>
+                  </div>
+                </div>
+               
+               
+              </div>
+             </div>
+      <!-- upcoming Appointment ends  here -->
+        <!-- Test-reports start here -->
+        <div class="Test-reports bg-gray-100  mt-5 md:py-5 px-2 md:px-8">
+         <h2 class="font-bold">Test Reports</h2>
+         <div class="flex font-bold gap-20 justify-around">
+            <h2><a href="">CT-scan</a></h2>
+            <h2><a href="">EYE Fluorescein Test </a></h2>
+         </div>
+        </div>
+        <!-- Test-reports ends here -->
+        <!-- Prescription start here  -->
+         <div class="Prescription mt-5 overflow-x-auto whitespace-nowrap md:mb-3 lg:mb-20">
+            <h1 class="px-8  font-bold">Prescription</h1>
+            <table class="w-full mt-3  ">
+               <thead>
+                  
+                     <tr class="border-4 border-white">
+                        <td width="500px" class="px-8 bg-gray-100 py-2 text-left font-[500]">Prescriptions</td>
+                     <td width="300px" class="px-8 bg-gray-100 py-2 text-left font-[500]">Date</td>
+                     <td width="auto" class="px-8 bg-gray-100 py-2 text-left font-[500]">Duration</td>
+                     </tr>
+                 
+                    
+               </thead>
+               <tbody>
+                     <tr class="">
+                        <td class="py-2  bg-gray-100 px-8">Data load here</td>
+                        <td class="py-2  bg-gray-100 px-8">10/12/2024</td>
+                        <td class="py-2  bg-gray-100 px-8">2days</td>
+                     </tr>
+                     <tr class="border-4 border-white">
+                        <td class="py-2  bg-gray-100 px-8">Data load here</td>
+                        <td class="py-2  bg-gray-100 px-8">10/12/2024</td>
+                        <td class="py-2  bg-gray-100 px-8">2days</td>
+                     </tr>
+               </tbody>
+            </table>
+         </div>
+        <!-- Prescription start here  -->
+         <!-- footer start here -->
+          <footer class="footer  px-2   lg:px-20     bg-black w-full gap-2  text-white fixed bottom-0  py-2    ">
+               <ul class="flex md:gap-10 flex-wrap gap-2  md:justify-normal  ">
+                  <li class="text-sm font-[500]">Contact</li>
+                  <li class="text-sm font-[500]">Privacy Policy</li>
+                  <li class="text-sm font-[500]">Term and conditions</li>
+                   <li class=" ml-0  lg:ml-[180px] inline-block text-gray-300 ">Emergency Contact: 030290308332</li>
+               </ul>
+          </footer>
+          <!-- footer ends here -->
+         </div>
+         <!-- main content ends here -->
+
+    </div>
+
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>

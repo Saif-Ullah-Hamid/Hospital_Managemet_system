@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+     overflow-x: hidden;
+}
+.image-overlay{
+     width: 100%;
+     height: 100vh;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.6 ), rgba(0, 0, 0, 0.6)), url('./Assets/university-hospital-ulm-1366019_1920.jpg');
+} 
+
+
+.main-content{
+     width: calc(100% - 16rem);
+}
+
+
+a{
+     transition: all 0.5s ease;
+}
+.bar{
+     display: none;
+}
+
+
+
+/* tap navbar css */
+
+@media (max-width:768px) {
+     .image-overlay{
+          background-color:white;
+          background-image: none;
+     }
+  
+}
+@media (max-width:999px) {
+     .main-content{
+          width:100%;
+     }   
+     .sidebar{
+          position: absolute;
+          top: 0;
+          left: -400px;
+          transition: all 1s ease;
+        }  
+        .bar{
+          display: unset;
+        }
+     .top-navbar{
+          justify-content: space-between;
+     }
+     .active{
+          left: 0;
+          z-index: 99;
+     }
+   
+}
+.Sidebar-footer{
+     display: none;
+}
+
+.hidden {
+     display: none;
+ }
+ 
+ .dropdownlink:hover .hidden,
+ .dropdownlink .dropdown-content:hover {
+     display: block; /* Show dropdown on hover of parent or dropdown itself */
+ }
+ 
+@media (max-width:1000px){
+     .footer{
+          display:none;
+          background-color: red;
+          padding-right: 5000px;
+     }
+     table{
+          margin: 0;
+     }
+     .Sidebar-footer{
+          display:block;
+     }
+}
+::-webkit-scrollbar{
+     width: 0px;
+     height: 0px;
+}
+
+@media (min-width:1024) {
+   
+     .appointment-container::-webkit-scrollbar{
+          width: 0px;
+          height: 0px;
+     }
+     .footer{
+          padding-right: 500px;
+     }
+     
+}

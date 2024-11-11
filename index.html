@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="font owesome icon/all.min.css">
+    
+</head>
+<body>
+   <div class="login-container w-full h-auto sm:h-screen image-overlay bg-no-repeat  bg-cover bg-center flex justify-center items-center ">
+    <div class="login relative bg-black text-white lg:w-[400px] lg:h-[75%] h-auto flex flex-col rounded-[30px] mt-16 p-10">
+        <div class="logo flex items-center justify-center absolute top-[-15%] md:left-[28%] lg:left-[33%] border-white border-[1.5px] left-[28%] sm:left-[28%] w-[130px]  h-[130px] bg-black rounded-full   ">
+            <img class="w-[90px] h-[90px]" src="./Assets/logo.png" alt="">
+        </div>
+        <h2 class="text-center font-bold text-2xl mt-[40px]">Login</h2>
+
+         <form class="flex flex-col gap-2 font-semibold  ">
+            <label for="userId">Email</label>
+            <input class="px-3 py-[6px] rounded-2xl  outline-none   text-black"  type="email" placeholder="Enter user email">
+    
+            <label for="userId">Password</label>
+            <input class="px-2 py-[6px] rounded-2xl outline-none  text-black" type="password" placeholder="Enter user password..." minlength="8" maxlength="15">
+            <label for="position">Select Position</label>
+            <select name="position" id="position" class="text-black py-[6px] rounded-2xl px-2 pr-5 outline-none">
+                <option value="doctor" class="py-[6px] rounded-full px-2 outline-none">Doctor</option>
+                <option value="patient" class="py-[6px] rounded-full px-2 outline-none">Patient</option>
+            </select>
+            <button class="bg-[#2f6dd7] py-[10px] transition-all duration-500 hover:bg-[#285db9] rounded-md px-3"><a href="/">Login</a></button>
+         </form>
+
+        <div class="regester-div flex items-center w-full gap-4 justify-center mt-5">
+            <a class="underline text-center" href="">Forgot Passord</a> 
+            <a class="underline text-center" href="regester.html">Register</a>
+        </div>
+    </div>
+   </div>
+</body>
+</html>

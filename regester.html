@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="font owesome icon/all.min.css">
+</head>
+<body>
+     <div class=" image-overlay bg-no-repeat bg-center bg-cover w-full h-screen flex justify-center">
+     
+        <div class="register bg-black text-white relative md:w-[700px] w-auto h-[635px] md:h-[430px]  mt-20 rounded-lg  ">
+           <center class="flex items-center w-full justify-center"> 
+            <div class="logo flex items-center justify-center absolute top-[-10%] border-white border-[1.5px]  w-[130px]  h-[130px] bg-black rounded-full   ">
+            <img class="w-[90px] h-[90px]" src="./Assets/logo.png" alt="">
+        </div></center>
+        <h2 class="text-center font-bold text-2xl mt-[90px]">Regesteration</h2>
+        
+        <form>
+            <div class="flex items-center justify-center  flex-col md:flex-row">
+                <div class="left-div flex flex-col gap-2 px-20">
+                    <label for="username">Name</label>
+                    <input id="username" class="px-4 py-[3px] rounded-2xl outline-none  text-black" type="text" placeholder="Enter name here..." >
+                    <label for="gender">Gender</label>
+                    <select name="" id="" class="text-black py-[3px] rounded-2xl px-2 pr-5 outline-none">
+                        <option value="male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="email">Email</label>
+                    <input id="email" class="px-4 py-[3px] rounded-2xl outline-none  text-black" type="email" placeholder="Enter email here..." >
+                </div>
+                <div class="right-div flex flex-col gap-2  ">
+                    <label for="contact">Contact</label>
+                    <input id="contact" class="px-4 py-[3px] rounded-2xl outline-none  text-black" type="number" placeholder="Enter number here..." >
+                    <label for="date">Date of Birth</label>
+                    <input id="date" class="px-4 py-[3px] rounded-2xl outline-none  text-black" type="date" placeholder="Enter date of birth here..." >
+                    <label for="address">Address</label>
+                    <input id="address" class="px-4 py-[3px] rounded-2xl outline-none  text-black" type="text" placeholder="Enter address here..." >
+                </div>
+            </div>
+            <button class="bg-[#2f6dd7] py-[5px] block mx-auto mt-8 transition-all duration-500 hover:bg-[#285db9] rounded-md px-10"><a href="Dashboard.html">Register</a></button>
+            <a href="" class="text-center block text-sm mt-2 underline ">Sign in</a>
+        </form>
+        </div>
+     </div>
+</body>
+</html>

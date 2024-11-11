@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="font owesome icon/all.min.css">
+    <link rel="stylesheet" href="font owesome icon/fontawesome.min.css">
+    
+
+</head>
+<body>
+    <div class=" flex w-screen bg-red-5000 h-screen">
+      <!-- sidebar start here --> 
+      <aside id="logo-sidebar" class="sidebar  w-[16rem] h-screen    " >
+         <div class="h-full  pb-4 overflow-y-auto bg-black text-white ">
+         <div class="logo flex w-full h-10 items-center py-12  border-b-[1px]  border-[#dcbf73]  ">
+            <img src="./Assets/logo.png" alt="" class="w-[70px] h-[70px] "> <span class="font-bold text-3xl text-[#ecc562]">H<span class="ml-[-10px]">M</span>S</span>
+         </div>
+         <div class="border-b-[1px] border-[#dcbf73] mt-1"></div>
+
+            <ul class=" menu space-y-2 font-medium px-2 mt-5">
+               <li >
+                  <a href="Dashboard.html" class="flex items-center hover:text-black group  p-2   group-hover:text-black  rounded-lg hover:bg-gray-100  group">
+                     <i class="fas fa-home  "></i>
+                     <span class="ms-3">Home</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="Appointment.html" class="flex items-center hover:text-black group  p-2   group-hover:text-black  rounded-lg hover:bg-gray-100  group">
+                     <i class="fas fa-ring  "></i>
+                     <span class="ms-3 ">Appointments</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="Bills.html" class="flex items-center hover:text-black group  p-2   group-hover:text-black  rounded-lg hover:bg-gray-100  group">
+                     <i class="fas fa-gear  "></i>
+                     <span class="ms-3 ">Bills</span>
+                  </a>
+               </li>
+               <li class="relative dropdownlink">
+                  <a href="#" class="flex items-center hover:text-black group p-2 rounded-lg hover:bg-gray-100">
+                      <i class="fas fa-gear"></i>
+                      <span class="ms-3">Medical Records</span>
+                  </a>
+                  <div class="dropdown absolute left-5 mt-1 w-56 top-9 bg-white rounded-lg shadow-lg hidden group-hover:block dropdown-content">
+                      <a href="/visitHistory" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-black">Visit History</a>
+                      <a href="/TestResult" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-black">Test Results</a>
+                  </div>
+              </li>
+              
+              
+            </ul>
+            <div class="Sidebar-footer  text-gray-400 text-sm mt-24  px-5">
+               <div>
+                  <p>Contact</p>
+                  <p>Privacy Policy</p>
+                  <p>Term and conditions</p>
+               </div>
+               <div>
+                  <p class="text-gray-400">Emergency Contact:03290308332</p>
+               </div>
+            </div>
+         </div>
+      </aside>
+         <!-- sidebar end here -->
+                  
+         <!-- Main content start here -->
+         <div class="main-content text-black bg-white w-full  overflow-scroll relative  h-screen">
+            <!-- top navbar start -->
+           <div class="top-navbar text-right my-0 py-2 p-5 flex items-center justify-end">
+            <div class="bar   "><i class="fas fa-bars "></i></div>
+          <div class="right-div flex items-center gap-2">
+            <div class="image w-12 h-12 rounded-full bg-gray-200 inline-block">
+               <img src="Assets/user.jpg" alt="" width="50px" height="50px" class="rounded-full">
+            </div>
+            <span class="font-semibold ">User Name <i class="fas fa-gear fa-spin"></i> </span>
+          </div>
+
+           </div>
+          
+           <!-- Appointment start -->
+           <h1 class="font-semibold text-xl  border-b-[1.5px] py-2  mb-3 border-b-blue-500 px-5 mx-5 text-center md:text-left ">Appointments</h1>
+           <p class="text-center font-bold text-sm">Schedule New Appointment</p>
+
+         <div class="bg-gray-200  md:w-[70%] rounded-md flex flex-col mx-auto px-8 py-6 gap-8 justify-center ">
+            <div class="make-appointment flex gap-5 sm:gap-20 flex-col sm:flex-row   ">
+                  <!-- left div -->
+                 <div class="left-div  flex flex-col gap-5 ">
+                 <div> 
+                  <label for="name" class="text-sm">Name:</label> 
+                  <input type="text" name="name" id="name" class=" border-[1px] rounded-full border-black px-[5px] text-sm outline-none py-[2px]" placeholder="Auto fill">
+               </div>
+               <div> 
+                  <label for="name" class="text-sm">Phone:</label> 
+                  <input type="number" name="name" id="name" class=" border-[1px] rounded-full border-black px-[5px] text-sm outline-none py-[2px]" placeholder="Auto fill">
+               </div>
+               <div> 
+                  <label for="name" class="text-sm">Email:</label> 
+                  <input type="text" name="email" id="name" class=" border-[1px] rounded-full border-black px-[5px] text-sm outline-none py-[2px]" placeholder="Auto fill">
+               </div>
+               <div> 
+                  <label for="name" class="text-sm">Reason of visit:</label> <input type="text" name="name" id="name" class=" border-[1px] rounded-full border-black px-[5px] text-sm outline-none py-[2px]" placeholder="Auto fill">
+               </div>
+                 </div>
+                 <!-- right div -->
+                 <div class="right-div flex flex-col gap-5">
+                <div> 
+                  <label for="name">Department:</label>
+                 <select name="" id="" class="px-8 py-[2px] rounded-full border-[0.5px] border-black outline-none">
+                  <option value="Department">Department</option>
+                 </select>
+                </div>
+                <div> 
+                  <label for="name">Doctor:</label>
+                 <select name="" id="" class="px-8 py-[2px] rounded-full border-[0.5px] border-black outline-none">
+                  <option value="Doctor">Saif Ullah</option>
+                  <option value="doctor">Syed Alam</option>
+                 </select>
+                </div>
+                <div> 
+                  <label for="name">Select Date:</label>
+                  <input type="date" name="name" id="name" class=" border-[1px] rounded-full border-black px-[5px] text-sm outline-none py-[2px]" placeholder="Auto fill">
+                </div>
+                <div> 
+                  <label for="name">Select time</label>
+                  <input type="time" name="name" id="name" class=" border-[1px] rounded-full border-black px-[5px] text-sm outline-none py-[2px]" placeholder="Auto fill">
+                </div>
+               </div>
+            
+            </div>
+            <button class="bg-[#0f1054] w-fit block mx-auto text-white py-2 px-4 rounded-md">Make Appointment</button>
+         </div>
+           <!-- Appointment end -->
+           
+           <!-- schedule appointment -->
+           <h1 class="font-[500] text-sm    py-2  mb-3  px-5 mx-5 text-center md:text-left ">Schedule Appointments</h1>
+           <div class="appointment-container mb-20    ">
+             <div class="box-container    flex flex-wrap  gap-5 px-5 md:px-2 justify-around">
+              <div class="box bg-gray-100   w-60 h-auto flex justify-between rounded-2xl  px-3 py-5 shadow-md hover:scale-[1.05] transition-all duration-500 shadow-black">
+                 <div>
+                     <div class="profile ml-[66px]">
+                        <img src="Assets/pngwing.com (4).png" alt="" class="w-16 h-116 mx-auto">
+                        <h3 class="text-sm font-semibold">Doctor Name</h3>
+                       </div>
+                     <div class="profile-content mt-5 pb-10 relative   px-3">
+                        <h2 class="font-[500]">Time: <span class="font-normal text-[13px]">6:33 AM</span></h2>
+                        <h2 class="font-[500]">Date: <span class="font-normal text-[13px]">27/10/2024</span></h2>
+                        <h2 class="font-[500]">Reason: <span class="font-normal text-[13px]">lorem ipsum</span></h2>
+                        <h2 class="font-[500]">Status: <span class="font-normal text-[13px]">Completed</span></h2>
+                        <div class="flex gap-20  mt-6  absolute">
+                           <a href="/Appointment.html" class="text-red-500">Cancel</a>
+                           <a href="/Appointment.html" class="text-blue-800">Reschedule</a>
+                        </div>
+                     </div>
+                    
+                 </div>
+               </div>
+               <div class="box bg-gray-100   w-60 h-auto flex justify-between rounded-2xl  px-3 py-5 shadow-md hover:scale-[1.05] transition-all duration-500 shadow-black">
+                  <div>
+                      <div class="profile ml-[66px]">
+                         <img src="Assets/pngwing.com (4).png" alt="" class="w-16 h-116 mx-auto">
+                         <h3 class="text-sm font-semibold">Doctor Name</h3>
+                        </div>
+                      <div class="profile-content mt-5 pb-10 relative   px-3">
+                         <h2 class="font-[500]">Time: <span class="font-normal text-[13px]">6:33 AM</span></h2>
+                         <h2 class="font-[500]">Date: <span class="font-normal text-[13px]">27/10/2024</span></h2>
+                         <h2 class="font-[500]">Reason: <span class="font-normal text-[13px]">lorem ipsum</span></h2>
+                         <h2 class="font-[500]">Status: <span class="font-normal text-[13px]">Completed</span></h2>
+                         <div class="flex gap-20  mt-6  absolute">
+                            <a href="/Appointment.html" class="text-red-500">Cancel</a>
+                            <a href="/Appointment.html" class="text-blue-800">Reschedule</a>
+                         </div>
+                      </div>
+                     
+                  </div>
+                </div>
+                <div class="box bg-gray-100   w-60 h-auto flex justify-between rounded-2xl  px-3 py-5 shadow-md hover:scale-[1.05] transition-all duration-500 shadow-black">
+                  <div>
+                      <div class="profile ml-[66px]">
+                         <img src="Assets/pngwing.com (4).png" alt="" class="w-16 h-116 mx-auto">
+                         <h3 class="text-sm font-semibold">Doctor Name</h3>
+                        </div>
+                      <div class="profile-content mt-5 pb-10 relative   px-3">
+                         <h2 class="font-[500]">Time: <span class="font-normal text-[13px]">6:33 AM</span></h2>
+                         <h2 class="font-[500]">Date: <span class="font-normal text-[13px]">27/10/2024</span></h2>
+                         <h2 class="font-[500]">Reason: <span class="font-normal text-[13px]">lorem ipsum</span></h2>
+                         <h2 class="font-[500]">Status: <span class="font-normal text-[13px]">Completed</span></h2>
+                         <div class="flex gap-20  mt-6  absolute">
+                            <a href="/Appointment.html" class="text-red-500">Cancel</a>
+                            <a href="/Appointment.html" class="text-blue-800">Reschedule</a>
+                         </div>
+                      </div>
+                     
+                  </div>
+                </div>
+              
+              
+             </div>
+            </div>
+           
+         <!-- footer start here -->
+          <footer class="footer  px-2   lg:px-20     bg-black w-full gap-2  text-white fixed bottom-0  py-2    ">
+               <ul class="flex md:gap-10 flex-wrap gap-2  md:justify-normal  ">
+                  <li class="text-sm font-[500]">Contact</li>
+                  <li class="text-sm font-[500]">Privacy Policy</li>
+                  <li class="text-sm font-[500]">Term and conditions</li>
+                   <li class=" ml-0 lg:ml-[250px] inline-block text-gray-300 ">Emergency Contact: 030290308332</li>
+               </ul>
+          </footer>
+          <!-- footer ends here -->
+         </div>
+         <!-- main content ends here -->
+
+    </div>
+
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
